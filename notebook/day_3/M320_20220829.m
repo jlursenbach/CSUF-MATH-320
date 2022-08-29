@@ -27,4 +27,7 @@ isempty(a) % checks if a variable is empty (Yes = 1 No = 2)
 % script executes as is written
 % each statement must be chronologicy defined and in correct syntax
 
+% we do have a arecod of what is being executed. 
+% convenient in the sense that it can be edited and executed over and over
+% make sure that you can create a script file, name it, and execute it. 
 
