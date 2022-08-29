@@ -31,3 +31,32 @@ isempty(a) % checks if a variable is empty (Yes = 1 No = 2)
 % convenient in the sense that it can be edited and executed over and over
 % make sure that you can create a script file, name it, and execute it. 
 
+%% Class Assignment 1: 
+
+% Given f(x), the Taylor expansion of f(x) around the point x_0 is:
+% f(x) ~= f
+
+% Find the 2nd order Taylor expansion for:
+% f(x) = sin(x) around the point x=pi/4
+
+% f(x_0) + (f'(x_0)/1!)(x-x_0)+(f``(x)/2!)(x-x_0)^2
+
+% sin(x) ~= (sin(pi/4)+cos(pi/4))
+clear
+x=0.1;yexact=sin(x);a=sqrt(2)/2; 
+yapprox=a+a* (x-pi/4)-(a/2) * (x-pi/4)^2; % second order tayleor of sin(x) around pi/4
+error=abs(yexact-yapprox);
+whos
+
+% results:
+% a = .7071
+% error = 0.0435
+% x = 0.1000
+% yapprox = 0.0564
+% yexact = 0.0998
+
+% upon executing the script, any error will be shown in the command window
+% warnings and errors are shown
+
+% F9 to execute certain highlighted portions of the script
+% F5 to save and execute the script file
