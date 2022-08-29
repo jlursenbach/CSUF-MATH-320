@@ -31,7 +31,7 @@ isempty(a) % checks if a variable is empty (Yes = 1 No = 2)
 % convenient in the sense that it can be edited and executed over and over
 % make sure that you can create a script file, name it, and execute it. 
 
-%% Class Assignment 1: 
+% Example 1: 
 
 % Given f(x), the Taylor expansion of f(x) around the point x_0 is:
 % f(x) ~= f
