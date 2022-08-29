@@ -60,3 +60,47 @@ whos
 
 % F9 to execute certain highlighted portions of the script
 % F5 to save and execute the script file
+
+% EX: verify numerically that: 
+% cos(theta/2)^2 = (tan(theta)+sin(theta))/(2tan(theta))
+% for several values of theta
+
+% script: 
+
+clear % resetting variables
+
+% first try
+theta = pi/4;
+
+left = cos(theta/2)^2;
+right = (tan(theta)+sin(theta))/(2*tan(theta));
+
+error = left - right;
+
+whos
+
+% second try
+theta = pi/4;
+
+left = cos(theta/2)^2;
+right = (tan(theta)+sin(theta))/(2*tan(theta));
+
+error = left - right;
+
+whos
+
+% Ex: Volume of a cone 
+% y = (r/h)x
+
+%  Volume = Integral h_0 dv = integral h_0 (pi)(r)^2dx = (pi/3)r^2(h)
+
+% Ex: 
+% R_1 = 16; R_2 = 6.5; R_3 = 12; R_4=9.5;
+% d_12 = R_1 + R_2; 
+% d_23 = R_2+R_3;
+% d_34 = R_3+R_4;
+% d_14 = R_1+R_4;
+
+% triangle sides: A,B,C angles: a,b,c
+% Law of Cosine: A^2 = B^2+C^2-2BCcos(a)
+% d_24^2 =
