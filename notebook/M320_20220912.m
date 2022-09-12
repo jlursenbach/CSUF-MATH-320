@@ -100,3 +100,22 @@ B=[ones(1,3); u]
 % we now have 2 2x3 matrixes 
 % you can add and subtract them
 
+%% In-Class Assignment 20220912
+% Create an array with 
+% name
+% CWID
+% Course name, number, and section
+
+% use char for letters and doubles for numbers
+
+% ex:
+% Name: Jacob L. Ursenbach
+% CWID: 12345678
+% Course: MATH 320 Mathematical Computation Section 02
+
+name = 'Jacob L. Ursenbach'
+cwid = 885979922
+course = ['MATH ' num2str(320) ' Mathematical Computation Section' num2str(02)]
+
+char_array = [name ' ' num2str(cwid) ' ' course]
+
